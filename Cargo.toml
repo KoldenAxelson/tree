@@ -1,0 +1,14 @@
+[package]
+name = "tree"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ignore = "0.4"
+colored = "2.0"
+
+[profile.release]
+strip = true
+opt-level = "s"
+lto = true
+codegen-units = 1
